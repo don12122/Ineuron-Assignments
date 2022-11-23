@@ -25,9 +25,16 @@ function fToC(fahrenheit) {
     var message = fTemp + '\xB0F is ' + fToCel + '\xB0C.';
     console.log(message);
 }
+
+function factorial(num) {
+    let ans = 1;
+    for(let i = 2; i <= num; i++) ans *= i;
+    return ans;
+}
 let year = 2010;
 let ans = year ? 'leap' : 'not leap';
 
 cToF(60);
 fToC(45);
+console.log(factorial(3));
 console.log(ans);
